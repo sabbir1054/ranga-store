@@ -32,7 +32,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
   text-align: center;
-  width: 100%;
+  width: 90%;
   margin: auto;
   align-items: center;
   justify-content: center;
