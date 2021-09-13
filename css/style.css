@@ -27,8 +27,14 @@ body {
   justify-content: center;
 }
 .single-product {
+  margin: 5px;
+  width: 18rem;
   padding: 10px;
   transition: 0.6s;
+}
+.product{
+  display: flex;
+  justify-content: center;
 }
 .button{
   background-color: blueviolet !important;
@@ -38,7 +44,7 @@ body {
   box-shadow: 4px 4px 30px  #6f64daa1;
   border-radius: 10px;
   border: 1px solid blueviolet;
-      background-color: #eaeaea;
+      background-color: #ffffff;
 }
 .product-image {
   width: 150px;
