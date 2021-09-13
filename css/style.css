@@ -46,13 +46,21 @@ body {
 }
 /* Cart section */
 .cart {
+  color: white;
   width: 350px;
-  border: 1px solid blueviolet;
+  border: 3px solid #FFC720;
   padding: 10px;
+  background-color: blueviolet;
   box-shadow: 3px 10px 20px #563a5e8f;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
+}
+tbody{
+  color: white;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: white !important;
 }
 .cart-main {
   padding-right: 30px;
