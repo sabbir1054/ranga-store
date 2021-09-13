@@ -12,13 +12,13 @@ body {
 .search-box{
   margin: auto;
   margin-top: 50px;
-  width: 281px;
+  /* width: 281px; */
 }
 
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid blueviolet;
+  /* border: 1px solid #FFCA2C; */
   border-radius: 10px;
   text-align: center;
   width: 90%;
@@ -32,19 +32,25 @@ body {
   padding: 10px;
   transition: 0.6s;
 }
+.card{
+  background-color: blueviolet;
+  color: white;
+  
+}
 .product{
   display: flex;
   justify-content: center;
 }
 .button{
-  background-color: blueviolet !important;
-  color: white;
+  
+ background-color: white;
+ color: blueviolet;
 }
 .single-product:hover {
   box-shadow: 4px 4px 30px  #6f64daa1;
   border-radius: 10px;
-  border: 1px solid blueviolet;
-      background-color: #ffffff;
+  border: 3px solid #FFCA2C;
+
 }
 .product-image {
   width: 150px;
@@ -54,7 +60,7 @@ body {
 .cart {
   color: white;
   width: 350px;
-  border: 3px solid #FFC720;
+  border: 3px solid #FFCA2C;
   padding: 10px;
   background-color: blueviolet;
   box-shadow: 3px 10px 20px #563a5e8f;
