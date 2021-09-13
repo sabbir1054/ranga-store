@@ -1,4 +1,4 @@
-//get all products  
+//get all products
 const loadProducts = () => {
   const data = [
     {
@@ -211,8 +211,7 @@ const loadProducts = () => {
   showProducts(data);
 };
 
-
-// show all product in UI 
+// show all product in UI
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
@@ -225,11 +224,11 @@ const showProducts = (products) => {
       </div>
       <h4>${product.title}</h4>
       <p>Category: ${product.category}</p>
-      <p>Avarage rating: ${product.rating.rate}</p>
+      <p>Average rating: ${product.rating.rate}</p>
       <p>Ratings: ${product.rating.count}</p>
       <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-warning">add to cart</button>
-      <button id="details-btn" class="btn btn-success">Details</button></div>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-warning text-dark fw-bold">Add to cart</button>
+      <button id="details-btn" class="btn btn-success button">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
@@ -257,7 +256,7 @@ const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
   const total = parseFloat(convertedOldPrice) + convertPrice;
-  document.getElementById(id).innerText = (total.toFixed(2));
+  document.getElementById(id).innerText = total.toFixed(2);
 };
 
 // set innerText function
@@ -285,10 +284,10 @@ const updateTaxAndCharge = () => {
 //grandTotal update function
 const updateTotal = () => {
   const grandTotal =
-    getInputValue("price") + getInputValue("delivery-charge") +
+    getInputValue("price") +
+    getInputValue("delivery-charge") +
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
-
 
 loadProducts();
